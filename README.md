@@ -1,6 +1,7 @@
-# Ongo arcade cores in a separate menu
+# Ongo arcade cores in a separate folder
 
 An arcade-only adapter for [Ongo's MiSTer collection](https://github.com/OngoGablogian/MiSTer_Ongo).
+It keeps Ongo's arcade cores and launchers in a separate `_Ongo` folder on the MiSTer's storage.
 Start **Update All normally**. Its Downloader installs the adapted catalog with normal file tracking and cleanup.
 
 ## Install
@@ -15,7 +16,7 @@ description = Ongo arcade cores in _Ongo
 ```
 
 Keep the normal distributions and **Arcade ROMs Database** enabled. Enable this adapter instead of Ongo's original database;
-using both would install a second set of Ongo launchers in the ordinary menus.
+using both would install a second set of Ongo launchers in the regular `_Arcade` folder.
 If the original database was previously installed, review its tracked files before uninstalling it; this adapter does not migrate or delete that installation.
 
 | Content | Destination |
