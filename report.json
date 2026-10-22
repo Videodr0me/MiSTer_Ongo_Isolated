@@ -1,0 +1,625 @@
+{
+  "counts": {
+    "dependency_cores": 18,
+    "files": 2480,
+    "manual_core_launchers": 47,
+    "mgls": 1,
+    "mras": 1408,
+    "ongo_cores": 131,
+    "rom_archives": 917,
+    "unlisted_rom_launchers": 36
+  },
+  "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
+  "excluded_files": [
+    {
+      "path": "_Arcade/cores/PrimalRage_20260925.rbf",
+      "reason": "Empty upstream RBF"
+    }
+  ],
+  "external_dependencies": [
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/IGSPGM_20260823.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Cabal PGM.mra",
+        "_Ongo/_Arcade/Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101 09-26-01 10-23-26, Japan).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 2).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 3).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 4).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 5).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 6).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 7).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 8).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Custom Difficulty 9).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Super Easy).mra",
+        "_Ongo/_Arcade/_alternatives/_Ketsui - Kizuna Jigoku Tachi/Ketsui Deathtiny - Kizuna Jigoku Tachi (Unknown 02).mra"
+      ],
+      "reference": "IGSPGM",
+      "source": "_Arcade/cores/IGSPGM_20260823.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/Psikyo_20260926.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Strikers 1945 (World) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Strikers 1945/Strikers 1945 (Japan - World) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Strikers 1945/Strikers 1945 (Japan) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Strikers 1945/Strikers 1945 (Japan, unprotected) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Strikers 1945/Strikers 1945 (Korea) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Strikers 1945/Strikers 1945 (World, unprotected) (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "Psikyo",
+      "source": "_Arcade/cores/Psikyo_20260926.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/PsikyoSH2_20260817.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Strikers 1945 II (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "PsikyoSH2",
+      "source": "_Arcade/cores/PsikyoSH2_20260817.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/Salamander_20260828.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Salamander (SP ver. clone Neo).mra",
+        "_Ongo/_Arcade/Salamander (SP ver. clone).mra"
+      ],
+      "reference": "Salamander",
+      "source": "_Arcade/cores/Salamander_20260828.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/SlapFight_20260713.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Alcon Bootleg (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/SlapFight Bootleg (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/Tiger Heli Bootleg (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "SlapFight",
+      "source": "_Arcade/cores/SlapFight_20260713.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/Cave_20260825.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Dangun Feveron (No Discomen) [v1.0].mra",
+        "_Ongo/_Arcade/DoDonPachi (Ship Color Hack).mra",
+        "_Ongo/_Arcade/DoDonPachi (Ship Color No BGM).mra",
+        "_Ongo/_Arcade/DoDonPachi Trainer [v1.11].mra"
+      ],
+      "reference": "cave",
+      "source": "_Arcade/cores/Cave_20260825.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/DonkeyKong_20240526.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Kana Kong Arcade [v1.01].mra"
+      ],
+      "reference": "donkeykong",
+      "source": "_Arcade/cores/DonkeyKong_20240526.rbf"
+    },
+    {
+      "database": "coinop",
+      "destination": "_Ongo/cores/fshark_mister_20260917.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Hishou Zame (Japan) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Flying Shark/Flying Shark (World) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Flying Shark/Sky Shark (US, Set 1) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Flying Shark/Sky Shark (US, Set 2) (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "fshark_mister",
+      "source": "_Arcade/cores/fshark_mister_20260917.rbf"
+    },
+    {
+      "database": "jtcores",
+      "destination": "_Ongo/cores/jtbubl.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Bubble Bobble Ultra [v1.0].mra"
+      ],
+      "reference": "jtbubl",
+      "source": "_Arcade/cores/jtbubl.rbf"
+    },
+    {
+      "database": "jtcores",
+      "destination": "_Ongo/cores/jtcps15.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Warriors of Fate - Special [v1.0].mra"
+      ],
+      "reference": "jtcps15",
+      "source": "_Arcade/cores/jtcps15.rbf"
+    },
+    {
+      "database": "jtcores",
+      "destination": "_Ongo/cores/jtcps2.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Darkstalkers - The Night Warriors (USA) (English Restoration) [RC1].mra",
+        "_Ongo/_Arcade/Marvel Super Heroes Vs. Street Fighter (USA) (English Restoration) [RC1].mra",
+        "_Ongo/_Arcade/Marvel Super Heroes Vs. Street Fighter EX (USA) [RC4].mra",
+        "_Ongo/_Arcade/Night Warriors - Darkstalkers' Revenge (USA) (English Restoration) [RC1].mra",
+        "_Ongo/_Arcade/Night Warriors 2 (USA) (English Translation) [RC3].mra",
+        "_Ongo/_Arcade/Street Fighter Alpha 2 (USA) (English Restoration) [RC1].mra",
+        "_Ongo/_Arcade/Street Fighter Alpha 3 (USA) (Restoration) [RC1].mra",
+        "_Ongo/_Arcade/Street Fighter Zero 2 Alpha (Asia) (English Restoration) [RC2].mra",
+        "_Ongo/_Arcade/Super Street Fighter II EX (USA) [RC6].mra",
+        "_Ongo/_Arcade/Super Street Fighter II Turbo - Grand Master Challenge (USA) (English Restoration) [RC2].mra",
+        "_Ongo/_Arcade/Vampire Savior - The Lord of Vampire (USA) (English Restoration) [RC2].mra",
+        "_Ongo/_Arcade/Vampire Savior 2 (USA) (English Translation) [RC3].mra",
+        "_Ongo/_Arcade/_alternatives/_Marvel Super Heroes Vs. Street Fighter/Marvel Super Heroes Vs. Street Fighter EX (Japan) [RC4].mra",
+        "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha 2/Street Fighter Zero 2 (Asia) (English Restoration) [RC1].mra",
+        "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha 2/Street Fighter Zero 2 (Japan) (Restoration) [RC1].mra",
+        "_Ongo/_Arcade/_alternatives/_Super Street Fighter II Turbo/Super Street Fighter II EX (Japan) [RC6].mra"
+      ],
+      "reference": "jtcps2",
+      "source": "_Arcade/cores/jtcps2.rbf"
+    },
+    {
+      "database": "jtcores",
+      "destination": "_Ongo/cores/jts16b.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Toryumon DX [v1.0].mra"
+      ],
+      "reference": "jts16b",
+      "source": "_Arcade/cores/jts16b.rbf"
+    },
+    {
+      "database": "jtcores",
+      "destination": "_Ongo/cores/jttwin16.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Gradius II (ver.xh).mra"
+      ],
+      "reference": "jttwin16",
+      "source": "_Arcade/cores/jttwin16.rbf"
+    },
+    {
+      "database": "distribution",
+      "destination": "_Ongo/cores/Pacman_20260625.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Chuckie Egg.mra",
+        "_Ongo/_Arcade/Pac-Yuyu Arcade [v1.0].mra",
+        "_Ongo/_Arcade/Pacu Pacu [v1.1].mra",
+        "_Ongo/_Arcade/Pollen Angel.mra"
+      ],
+      "reference": "pacman",
+      "source": "_Arcade/cores/Pacman_20260625.rbf"
+    },
+    {
+      "database": "coinop",
+      "destination": "_Ongo/cores/terracresta_20220723.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Terra Cresta (YM3526 set 1) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 2) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Terra Cresta/Terra Cresta (YM3526 set 3) (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "terracresta",
+      "source": "_Arcade/cores/terracresta_20220723.rbf"
+    },
+    {
+      "database": "coinop",
+      "destination": "_Ongo/cores/truxton2_20240517.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Truxton II - Tatsujin Oh (Round Select).mra"
+      ],
+      "reference": "truxton2",
+      "source": "_Arcade/cores/truxton2_20240517.rbf"
+    },
+    {
+      "database": "coinop",
+      "destination": "_Ongo/cores/twincobr_mister_20260917.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Kyukyoku Tiger (Japan, 2P Co-op) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/Twin Twist (Japan, 2P Co-Op).mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Cobra/Kyukyoku Tiger (Japan, 1P Set) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Cobra/Twin Cobra (US) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Cobra/Twin Cobra (World) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (Japan, 1P Set).mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (US).mra",
+        "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (World).mra"
+      ],
+      "reference": "twincobr_mister",
+      "source": "_Arcade/cores/twincobr_mister_20260917.rbf"
+    },
+    {
+      "database": "coinop",
+      "destination": "_Ongo/cores/zerowing_20240404.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Out Zone (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Out Zone/Out Zone (Harder) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Out Zone/Out Zone (Old Set) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Out Zone/Out Zone (Older set) (Visibility Mod) [v1.0].mra",
+        "_Ongo/_Arcade/_alternatives/_Out Zone/Out Zone (Zero Wing TP-015 PCB Conversion) (Visibility Mod) [v1.0].mra"
+      ],
+      "reference": "zerowing_20240404",
+      "source": "_Arcade/cores/zerowing_20240404.rbf"
+    }
+  ],
+  "manual_cores": [
+    {
+      "instructions": "Obtain Raki's CV1000 core separately and place its RBF in _Ongo/cores.",
+      "launchers": [
+        "_Ongo/_Arcade/_Cave CV1000/Akai Katana (Japan, 2010- 8-13 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Deathsmiles (Japan, 2007-10-09 MASTER VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Deathsmiles MegaBlack Label (Japan, 2008-10-06 MEGABLACK LABEL VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/DoDonPachi Dai-Fukkatsu Black Label (Japan, 2010-1-18 BLACK LABEL).mra",
+        "_Ongo/_Arcade/_Cave CV1000/DoDonPachi Dai-Fukkatsu Ver 1.5 (Japan, 2008-06-23 MASTER VER 1.5).mra",
+        "_Ongo/_Arcade/_Cave CV1000/DoDonPachi SaiDaiOuJou (Japan, 2012- 4-20).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Espgaluda II (Japan, 2005-11-14.MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Ibara (Japan, 2005-03-22 MASTER VER.., '06. 3. 7 ver.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Ibara Kuro Black Label (Japan, 2006-02-06. MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Ibara Kuro Black Label - Show Time (2026-10-12).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Medal Mahjong Moukari Bancho (Japan, 2007-06-05 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Muchi Muchi Pork! (Japan, 2007- 4-17 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Muchi Muchi Pork! Roppaku (2026-10-14 build 15).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Mushihime-Sama (Japan, 2004-10-12.MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Mushihime-Sama Futari Black Label - Another Ver (World, 2009-11-27 INTERNATIONAL BL).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Mushihime-Sama Futari Ver 1.5 (Japan, 2006-12-8.MASTER VER. 1.54.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Mushihime-Sama Matsuri Ver 1.5 (Japan, 2011-5-23 CAVEMATSURI VER1.5).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Pink Sweets - Ibara Sorekara (Japan, 2006-04-06 MASTER VER....).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Pink Sweets Rosy Future (2026-10-15).mra",
+        "_Ongo/_Arcade/_Cave CV1000/Puzzle! Mushihime-Tama (Japan, 2005-09-09.MASTER VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Akai Katana (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Deathsmiles (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/DoDonPachi Dai-Fukkatsu Black Label (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/DoDonPachi Dai-Fukkatsu Ver 1.5 (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/DoDonPachi SaiDaiOuJou (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Espgaluda II (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Mushihime-Sama (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Mushihime-Sama Futari Black Label (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Mushihime-Sama Futari Black Label - Another Ver (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Mushihime-Sama Futari Ver 1.5 (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_Cave CV1000 Practice ROMs/Mushihime-Sama Matsuri Ver 1.5 (Practice ROM).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_DoDonPachi Dai-Fukkatsu/DoDonPachi Dai-Fukkatsu Ver 1.0 (Japan, 2008-05-16 MASTER VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_DoDonPachi SaiDaiOuJou/DoDonPachi SaiDaiOuJou & Knuckles (CaveDwellers Hack).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Espgaluda II/Espgaluda II (Japan, 2005-11-14 MASTER VER, newer CV1000-B PCB).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Espgaluda II/Espgaluda II (Japan, 2005-11-14 MASTER VER, original CV1000-B PCB).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Ibara Kuro Black Label/Ibara Kuro Black Label (Japan, 2006-02-06 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Ibara/Ibara (Japan, 2005-03-22 MASTER VER..).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Mushihime-Sama Futari Black Label/Mushihime-Sama Futari Black Label (Japan, 2007-12-11 BLACK LABEL VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Mushihime-Sama Futari/Mushihime-Sama Futari Ver 1.0 (Japan, 2006-10-23 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Mushihime-Sama Futari/Mushihime-Sama Futari Ver 1.5 (Japan, 2006-12-8 MASTER VER 1.54).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Mushihime-Sama/Mushihime-Sama (Japan, 2004-10-12 MASTER VER).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Mushihime-Sama/Mushihime-Sama (Japan, 2004-10-12 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Pink Sweets - Ibara Sorekara/Pink Sweets - Ibara Sorekara (Japan, 2006-04-06 MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Pink Sweets - Ibara Sorekara/Pink Sweets - Ibara Sorekara (Japan, 2006-04-06 MASTER VER...).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Pink Sweets - Ibara Sorekara/Pink Sweets - Ibara Sorekara (Japan, 2006-xx-xx MASTER VER.).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Pink Sweets - Ibara Sorekara/Pink Sweets - Suicide Club (2017-10-31 SUICIDECLUB VER., bootleg).mra",
+        "_Ongo/_Arcade/_Cave CV1000/_alternatives/_Puzzle! Mushihime-Tama/Puzzle! Mushihime-Tama (Japan, 2005-09-09 MASTER VER).mra"
+      ],
+      "reference": "ikacore_CV1k"
+    }
+  ],
+  "shared_roms": [],
+  "sources": {
+    "coinop": {
+      "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
+      "sha256": "411f995484414b821dab9a67797be44d33134ffbe27285be75ed7658e9b271b7",
+      "timestamp": 1791336869,
+      "url": "https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip"
+    },
+    "distribution": {
+      "db_id": "distribution_mister",
+      "sha256": "ee9de17fa1c5488050dc26d6a1a2fa57ba11bdea5a82368248cf68db6418fad2",
+      "timestamp": 1792613108,
+      "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
+    },
+    "jtcores": {
+      "db_id": "jtcores",
+      "sha256": "b4401b4d347c725d5a3fc01f19c8d2b31c23468093954b8474764f1647bd68b1",
+      "timestamp": 1791823013,
+      "url": "https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip"
+    },
+    "ongo": {
+      "db_id": "OngoGablogian/MiSTer_Ongo",
+      "sha256": "7c78021b036747774e2fedef10a294296fe419f951ddf196afea18f5a67af483",
+      "timestamp": 1792624345,
+      "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
+    },
+    "roms": {
+      "db_id": "arcade_roms_db",
+      "sha256": "aa9a563f5b66cf551ca50f51ae2564b1354da5dbb97d794ccb3bf60dd489f66c",
+      "timestamp": 1792496873,
+      "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
+    }
+  },
+  "unlisted_roms": [
+    {
+      "launcher": "_Ongo/_Arcade/Candy Candy.mra",
+      "zip_alternatives": [
+        [
+          "candy.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Crazy War.mra",
+      "zip_alternatives": [
+        [
+          "crazywar.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Fortress 2 Blue Arcade (World) (ver 1.01 - pcb ver 3.05).mra",
+      "zip_alternatives": [
+        [
+          "fort2b.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Hidden Catch (World) - Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.03).mra",
+      "zip_alternatives": [
+        [
+          "hidnctch.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Hidden Catch 2 (pcb ver 3.03) (Kor-Eng) (AT89c52 protected).mra",
+      "zip_alternatives": [
+        [
+          "hidctch2.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Hidden Catch 2000 (AT89c52 protected).mra",
+      "zip_alternatives": [
+        [
+          "hidnc2k.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Hidden Catch 3 (ver 1.00 - pcb ver 3.05).mra",
+      "zip_alternatives": [
+        [
+          "hidctch3.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Iron Fortress.mra",
+      "zip_alternatives": [
+        [
+          "ironfort.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/KlonDike+.mra",
+      "zip_alternatives": [
+        [
+          "klondkp.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.02).mra",
+      "zip_alternatives": [
+        [
+          "landbrk.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Linky Pipe.mra",
+      "zip_alternatives": [
+        [
+          "linkypip.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/New Hidden Catch (World) - New Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02).mra",
+      "zip_alternatives": [
+        [
+          "nhidctch.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Penfan Girls - Step1. Mild Mind (set 1).mra",
+      "zip_alternatives": [
+        [
+          "penfan.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Puzzle King (Dance & Puzzle).mra",
+      "zip_alternatives": [
+        [
+          "puzzlekg.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Raccoon World.mra",
+      "zip_alternatives": [
+        [
+          "raccoon.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Steal See.mra",
+      "zip_alternatives": [
+        [
+          "stealsee.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/Twin Twist (Japan, 2P Co-Op).mra",
+      "zip_alternatives": [
+        [
+          "twincobr_patched.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_Taito F3 (WIP)/_experimental/Bubble Memories (bb3be alt program).mra",
+      "zip_alternatives": [
+        [
+          "bubblembe.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Fortress 2 Blue Arcade/Fortress 2 Blue Arcade (Korea) (ver 1.00 - pcb ver 3.05).mra",
+      "zip_alternatives": [
+        [
+          "fort2ba.zip",
+          "fort2b.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Hidden Catch 2/Hidden Catch 2 (pcb ver 1.00) (Kor-Eng-Jpn-Chi).mra",
+      "zip_alternatives": [
+        [
+          "hidctch2a.zip",
+          "hidctch2.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Hidden Catch/Hidden Catch (World) - Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02).mra",
+      "zip_alternatives": [
+        [
+          "hidnctcha.zip",
+          "hidnctch.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Iron Fortress/Gongtit Jiucoi Iron Fortress (Hong Kong).mra",
+      "zip_alternatives": [
+        [
+          "ironfortc.zip",
+          "ironfort.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct 2/Killer Instinct 2 (v1.0, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct 2/Killer Instinct 2 (v1.1, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct 2/Killer Instinct 2 (v1.3, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct 2/Killer Instinct 2 (v1.4, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct/Killer Instinct (proto v4.7, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct/Killer Instinct (v1.3, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct/Killer Instinct (v1.4, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Killer Instinct/Killer Instinct (v1.5d, ki-rom).mra",
+      "zip_alternatives": [
+        [
+          "/hbmame/ki-rom.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Land Breaker/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 1.0) (AT89c52 protected).mra",
+      "zip_alternatives": [
+        [
+          "landbrkb.zip",
+          "landbrk.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Land Breaker/Land Breaker (World) - Miss Tang Ja Ru Gi (Korea) (pcb ver 3.03) (AT89c52 protected).mra",
+      "zip_alternatives": [
+        [
+          "landbrka.zip",
+          "landbrk.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Penfan Girls - Step1. Mild Mind/Penfan Girls - Step1. Mild Mind (set 2).mra",
+      "zip_alternatives": [
+        [
+          "penfana.zip",
+          "penfan.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (Japan, 1P Set).mra",
+      "zip_alternatives": [
+        [
+          "twincobr_patched.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (US).mra",
+      "zip_alternatives": [
+        [
+          "twincobr_patched.zip"
+        ]
+      ]
+    },
+    {
+      "launcher": "_Ongo/_Arcade/_alternatives/_Twin Twist/Twin Twist (World).mra",
+      "zip_alternatives": [
+        [
+          "twincobr_patched.zip"
+        ]
+      ]
+    }
+  ],
+  "validation_scope": "Launcher hashes, XML, destination paths and catalog dependencies. ROM bytes and hardware behavior are not tested."
+}
