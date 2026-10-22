@@ -1,0 +1,35 @@
+{
+  "repository": "Videodr0me/MiSTer_Ongo_Isolated",
+  "db_id": "Videodr0me/MiSTer_Ongo_Isolated",
+  "menu_root": "_Ongo",
+  "minimum_launchers": 100,
+  "minimum_ongo_cores": 25,
+  "maximum_removal_fraction": 0.1,
+  "sources": {
+    "ongo": {
+      "id": "OngoGablogian/MiSTer_Ongo",
+      "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
+    },
+    "distribution": {
+      "id": "distribution_mister",
+      "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
+    },
+    "jtcores": {
+      "id": "jtcores",
+      "url": "https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip"
+    },
+    "coinop": {
+      "id": "Coin-OpCollection/Distribution-MiSTerFPGA",
+      "url": "https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip"
+    },
+    "roms": {
+      "id": "arcade_roms_db",
+      "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
+    }
+  },
+  "dependency_priority": ["distribution", "jtcores", "coinop"],
+  "game_directories": ["mame", "hbmame", "Battletoads", "kinst", "kinst2"],
+  "manual_cores": {
+    "ikacore_cv1k": "Obtain Raki's CV1000 core separately and place its RBF in _Ongo/cores."
+  }
+}

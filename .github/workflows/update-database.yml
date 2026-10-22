@@ -1,0 +1,54 @@
+name: Update arcade database
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - adapter.json
+      - scripts/**
+      - tests/**
+      - .github/workflows/update-database.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-arcade-database
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/ongo-launchers
+          key: ongo-launchers-${{ github.run_id }}
+          restore-keys: ongo-launchers-
+      - name: Run regression checks
+        run: python -B -m unittest discover -s tests -v
+      - name: Generate and validate the database
+        run: >-
+          python -B scripts/build_database.py
+          --output "${{ runner.temp }}/ongo-published"
+          --cache "${{ runner.temp }}/ongo-launchers"
+          --previous-url https://raw.githubusercontent.com/Videodr0me/MiSTer_Ongo_Isolated/db/db.json.zip
+      - name: Publish one atomic database update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python -B scripts/publish_database.py
+          --output "${{ runner.temp }}/ongo-published"
+          --repository Videodr0me/MiSTer_Ongo_Isolated
