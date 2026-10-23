@@ -1,12 +1,12 @@
 {
   "counts": {
     "dependency_cores": 18,
-    "files": 2515,
+    "files": 2574,
     "manual_core_launchers": 47,
     "mgls": 1,
-    "mras": 1435,
-    "ongo_cores": 133,
-    "rom_archives": 923,
+    "mras": 1487,
+    "ongo_cores": 137,
+    "rom_archives": 926,
     "unlisted_rom_launchers": 36
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
@@ -318,8 +318,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "266f1c3b446a5c53bef0a3f998d8c47d578ed01c9d9c722c3987fd797f968ffd",
-      "timestamp": 1792654849,
+      "sha256": "91061822bdbe6a88c171838a9ba8fd5dc447a4e662e97d8287acbef90bb5d06e",
+      "timestamp": 1792720632,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
