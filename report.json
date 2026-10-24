@@ -1,12 +1,12 @@
 {
   "counts": {
     "dependency_cores": 18,
-    "files": 2645,
+    "files": 2650,
     "manual_core_launchers": 47,
     "mgls": 1,
-    "mras": 1532,
-    "ongo_cores": 141,
-    "rom_archives": 948,
+    "mras": 1535,
+    "ongo_cores": 142,
+    "rom_archives": 949,
     "unlisted_rom_launchers": 36
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
@@ -306,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "ec36960e93f974fc76ab34b4a9b5e294b9e4e8ff02428cbc2f78f4b698f4dd82",
-      "timestamp": 1792692274,
+      "sha256": "6ef470d684b163beca2d7632c7107c10f781a73ef859b4f4b15298de13d4c851",
+      "timestamp": 1792821675,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -318,8 +318,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "e64a77663c0bb36370ae3a9e735aa65ed7fb4828ae974b82fcee3df00e5d9dbd",
-      "timestamp": 1792802085,
+      "sha256": "d5b1f02e14eb7f200666146c2215f5c811e7da95d766ca9b76fe4782272b0427",
+      "timestamp": 1792826408,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
