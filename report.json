@@ -306,14 +306,14 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "3faa84880656659701e4dfd8357f9c247e83723254beb95ada2872d298c3a3bc",
-      "timestamp": 1792968573,
+      "sha256": "e90a26bc3c4bc800866d00876ba210d71bb98eb5b5095034a81b009e1aa186f5",
+      "timestamp": 1793017214,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
       "db_id": "jtcores",
-      "sha256": "b4401b4d347c725d5a3fc01f19c8d2b31c23468093954b8474764f1647bd68b1",
-      "timestamp": 1791823013,
+      "sha256": "75ae3d0f2b3f4f94a81344e8f5b3e4c994bb1db7f1b912c8c58b66594531568f",
+      "timestamp": 1793006197,
       "url": "https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip"
     },
     "ongo": {
