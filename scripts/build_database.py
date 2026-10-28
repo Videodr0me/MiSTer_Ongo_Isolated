@@ -215,7 +215,7 @@ def build(config, dbs, launchers, previous=None):
     ongo = dbs["ongo"]
     files, payloads, folded = {}, {}, {}
     report = {"external_dependencies": [], "manual_cores": [], "unlisted_roms": [],
-              "excluded_files": [], "shared_roms": []}
+              "excluded_files": [], "shared_roms": [], "core_aliases": []}
 
     def put(path, spec):
         safe_path(path)
@@ -311,6 +311,20 @@ def build(config, dbs, launchers, previous=None):
             report["external_dependencies"].append({"reference": core, "database": name,
                                                      "source": path, "destination": destination,
                                                      "launchers": users})
+        elif core.casefold() in config.get("core_aliases", {}):
+            target = config["core_aliases"][core.casefold()]
+            match = find_core(ongo, target)
+            if not match:
+                raise BuildError("Reviewed core alias target missing: " + core + " -> " + target)
+            path, original = match
+            spec = translated_spec(ongo, path, original)
+            spec["path"] = "internal"
+            spec["tangle"] = sorted(set(spec.get("tangle", [])) | {"ongo_alias_" + core.casefold()})
+            # Supply an exact compatibility filename without changing the upstream MRA or RBF bytes.
+            destination = arcade_destination("_Arcade/cores/" + core + ".rbf", root)
+            put(destination, spec)
+            report["core_aliases"].append({"reference": core, "target_reference": target,
+                                           "source": path, "destination": destination, "launchers": users})
         elif core.casefold() in config["manual_cores"]:
             report["manual_cores"].append({"reference": core, "instructions": config["manual_cores"][core.casefold()],
                                            "launchers": users})
@@ -343,6 +357,7 @@ def build(config, dbs, launchers, previous=None):
     report["counts"] = {"files": len(files), "mras": sum(p.endswith(".mra") for p in files),
                         "mgls": sum(p.endswith(".mgl") for p in files), "ongo_cores": ongo_core_count,
                         "dependency_cores": len(report["external_dependencies"]),
+                        "core_aliases": len(report["core_aliases"]),
                         "rom_archives": sum(p.startswith(("games/mame/", "games/hbmame/")) for p in files),
                         "manual_core_launchers": sum(len(r["launchers"]) for r in report["manual_cores"]),
                         "unlisted_rom_launchers": len(report["unlisted_roms"])}

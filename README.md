@@ -46,6 +46,13 @@ MRAs resolve RBFs in the `cores` directory below the first underscore-prefixed c
 from the standard distribution, JTCORES or Coin-Op Collection. The originals in the normal arcade directory are unaffected.
 The adapter uses the same filename prefix/boundary and version-selection rules as MiSTer Main.
 
+Explicitly reviewed naming mismatches can use the `core_aliases` entries in `adapter.json`.
+When a launcher has no normal matching core, the adapter installs an additional copy of its specified Ongo RBF
+under the exact filename requested by the launcher in `_Ongo/cores`. The original core remains available;
+both copies use the same upstream URL, hash, size and filter tags, and the MRA stays unchanged.
+These compatibility copies are reported in `report.json` and disappear from the catalog once upstream supplies
+a matching filename or corrects the MRA reference. Unlisted mismatches and missing alias targets still block publication.
+
 The converter verifies every launcher against its source hash and parses all launcher XML before publication.
 Unexpected schemas, unsafe paths, destination collisions, conflicting ROM hashes, unresolved new RBF dependencies, or removals
 exceeding 10 percent of the previous catalog block publication. A failed build leaves the previous published catalog available.
@@ -58,7 +65,7 @@ different hashes block publication for review. ROM downloads are catalog-driven,
 ## Upstream requirements and limitations
 
 The generated [report.json](https://github.com/Videodr0me/MiSTer_Ongo_Isolated/blob/db/report.json) records exact source manifest hashes,
-dependency cores, excluded empty files, manually supplied cores, and ROM archive references absent from both catalogs.
+dependency cores, compatibility copies, excluded empty files, manually supplied cores, and ROM archive references absent from both catalogs.
 These checks establish catalog consistency; they do not test hardware behavior or verify downloaded ROM contents.
 
 - Ongo's CV1000 MRAs require Raki's separately obtained `ikacore_CV1k` core. Put that RBF in `_Ongo/cores`.

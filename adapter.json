@@ -29,6 +29,12 @@
   },
   "dependency_priority": ["distribution", "jtcores", "coinop"],
   "game_directories": ["mame", "hbmame", "Battletoads", "kinst", "kinst2"],
+  "core_aliases": {
+    "arcade-agress": "bazset_Agress",
+    "plumppop_bazset_b01": "bazset_PlumpPop",
+    "tee_d_off_bazset": "bazset_TeedOff",
+    "mastkin": "bazset_MastersofKin"
+  },
   "manual_cores": {
     "ikacore_cv1k": "Obtain Raki's CV1000 core separately and place its RBF in _Ongo/cores."
   }

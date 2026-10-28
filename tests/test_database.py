@@ -75,6 +75,75 @@ class AdapterTests(unittest.TestCase):
         with self.assertRaisesRegex(adapter.BuildError, "Unresolved"):
             adapter.build(config, dbs, launchers)
 
+    def test_reviewed_core_aliases_preserve_upstream_files(self):
+        pairs = (("Arcade-Agress", "bazset_Agress"), ("PlumpPop_BAZSET_B01", "bazset_PlumpPop"),
+                 ("Tee_d_Off_bazset", "bazset_TeedOff"), ("mastkin", "bazset_MastersofKin"))
+        for reference, target in pairs:
+            with self.subTest(reference=reference):
+                config, dbs, launchers = fixture()
+                mra = ("<misterromdescription><rbf>" + reference + "</rbf></misterromdescription>").encode()
+                dbs["ongo"]["files"]["_Arcade/Example.mra"] = metadata(mra)
+                launchers["_Arcade/Example.mra"] = mra, *adapter.verify_launcher(mra, metadata(mra))
+                source = "_Arcade/cores/" + target + "_20261026.rbf"
+                dbs["ongo"]["files"][source] = metadata(b"reviewed core", tangle=["upstream_core"])
+                with self.assertRaisesRegex(adapter.BuildError, "Unresolved"):
+                    adapter.build(config, dbs, launchers)
+                config["core_aliases"] = {reference.casefold(): target}
+                result, report, payloads = adapter.build(config, dbs, launchers)
+                alias = "_Ongo/cores/" + reference + ".rbf"
+                original = result["files"][adapter.arcade_destination(source, "_Ongo")]
+                for field in ("hash", "size", "url", "tags", "path"):
+                    self.assertEqual(result["files"][alias][field], original[field])
+                self.assertIn("upstream_core", result["files"][alias]["tangle"])
+                self.assertIn("ongo_alias_" + reference.casefold(), result["files"][alias]["tangle"])
+                self.assertTrue(adapter.core_matches(alias.rsplit("/", 1)[-1], reference))
+                self.assertEqual(result["files"]["_Ongo/_Arcade/Example.mra"]["hash"], metadata(mra)["hash"])
+                self.assertEqual(report["core_aliases"][0]["source"], source)
+                self.assertEqual(report["counts"]["core_aliases"], 1)
+                self.assertFalse(payloads)
+
+    def test_core_alias_retires_when_upstream_reference_or_filename_is_fixed(self):
+        for fix in ("reference", "filename"):
+            with self.subTest(fix=fix):
+                config, dbs, launchers = fixture()
+                config["core_aliases"] = {"oldname": "Example"}
+                mra = b"<misterromdescription><rbf>OldName</rbf></misterromdescription>"
+                dbs["ongo"]["files"]["_Arcade/Example.mra"] = metadata(mra)
+                launchers["_Arcade/Example.mra"] = mra, *adapter.verify_launcher(mra, metadata(mra))
+                before, _, _ = adapter.build(config, dbs, launchers)
+                self.assertIn("_Ongo/cores/OldName.rbf", before["files"])
+                if fix == "reference":
+                    mra = mra.replace(b"OldName", b"Example")
+                    dbs["ongo"]["files"]["_Arcade/Example.mra"] = metadata(mra)
+                    launchers["_Arcade/Example.mra"] = mra, *adapter.verify_launcher(mra, metadata(mra))
+                else:
+                    dbs["ongo"]["files"]["_Arcade/cores/OldName_20261028.rbf"] = metadata(b"fixed")
+                result, report, _ = adapter.build(config, dbs, launchers)
+                self.assertNotIn("_Ongo/cores/OldName.rbf", result["files"])
+                self.assertEqual(report["core_aliases"], [])
+
+    def test_core_alias_requires_exact_nonempty_upstream_target(self):
+        for target in ("Missing", "Example2", "Empty"):
+            with self.subTest(target=target):
+                config, dbs, launchers = fixture()
+                config["core_aliases"] = {"oldname": target}
+                data, xml, _ = launchers["_Arcade/Example.mra"]
+                launchers["_Arcade/Example.mra"] = data, xml, "OldName"
+                dbs["ongo"]["files"]["_Arcade/cores/Empty.rbf"] = metadata(b"")
+                with self.assertRaisesRegex(adapter.BuildError, "alias target missing"):
+                    adapter.build(config, dbs, launchers)
+
+    def test_normal_public_dependency_takes_precedence_over_alias(self):
+        config, dbs, launchers = fixture()
+        config["core_aliases"] = {"other": "Example"}
+        data, xml, _ = launchers["_Arcade/Example.mra"]
+        launchers["_Arcade/Example.mra"] = data, xml, "Other"
+        dbs["official"]["files"]["_Arcade/cores/Other_20261028.rbf"] = metadata(b"public")
+        result, report, _ = adapter.build(config, dbs, launchers)
+        self.assertIn("_Ongo/cores/Other_20261028.rbf", result["files"])
+        self.assertNotIn("_Ongo/cores/Other.rbf", result["files"])
+        self.assertEqual(report["core_aliases"], [])
+
     def test_known_private_core_is_reported(self):
         config, dbs, launchers = fixture()
         data, xml, _ = launchers["_Arcade/Example.mra"]
