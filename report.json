@@ -1,21 +1,55 @@
 {
+  "core_aliases": [
+    {
+      "destination": "_Ongo/cores/Arcade-Agress.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Agress - Missile Daisenryaku (Japan).mra"
+      ],
+      "reference": "Arcade-Agress",
+      "source": "_Arcade/cores/bazset_Agress_20261026.rbf",
+      "target_reference": "bazset_Agress"
+    },
+    {
+      "destination": "_Ongo/cores/PlumpPop_BAZSET_B01.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Plump Pop (Japan).mra"
+      ],
+      "reference": "PlumpPop_BAZSET_B01",
+      "source": "_Arcade/cores/bazset_PlumpPop_20261026.rbf",
+      "target_reference": "bazset_PlumpPop"
+    },
+    {
+      "destination": "_Ongo/cores/Tee_d_Off_bazset.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/Tee'd Off (World).mra"
+      ],
+      "reference": "Tee_d_Off_bazset",
+      "source": "_Arcade/cores/bazset_TeedOff_20261025.rbf",
+      "target_reference": "bazset_TeedOff"
+    },
+    {
+      "destination": "_Ongo/cores/mastkin.rbf",
+      "launchers": [
+        "_Ongo/_Arcade/The Masters of Kin.mra"
+      ],
+      "reference": "mastkin",
+      "source": "_Arcade/cores/bazset_MastersofKin_20261025.rbf",
+      "target_reference": "bazset_MastersofKin"
+    }
+  ],
   "counts": {
+    "core_aliases": 4,
     "dependency_cores": 18,
-    "files": 2716,
+    "files": 2805,
     "manual_core_launchers": 47,
     "mgls": 1,
-    "mras": 1563,
-    "ongo_cores": 150,
-    "rom_archives": 979,
+    "mras": 1610,
+    "ongo_cores": 162,
+    "rom_archives": 1005,
     "unlisted_rom_launchers": 0
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
-  "excluded_files": [
-    {
-      "path": "_Arcade/cores/PrimalRage_20260925.rbf",
-      "reason": "Empty upstream RBF"
-    }
-  ],
+  "excluded_files": [],
   "external_dependencies": [
     {
       "database": "distribution",
@@ -296,7 +330,15 @@
       "reference": "ikacore_CV1k"
     }
   ],
-  "shared_roms": [],
+  "shared_roms": [
+    "games/mame/arbalest.zip",
+    "games/mame/chainrec.zip",
+    "games/mame/hvysmsh.zip",
+    "games/mame/joemacr.zip",
+    "games/mame/metafox.zip",
+    "games/mame/narc.zip",
+    "games/mame/osman.zip"
+  ],
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -306,8 +348,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "e90a26bc3c4bc800866d00876ba210d71bb98eb5b5095034a81b009e1aa186f5",
-      "timestamp": 1793017214,
+      "sha256": "edd3eb8642b1fa1d6e96d1bc812d1239d8fa29bcba6433e070d1002560bbf9df",
+      "timestamp": 1793129507,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -318,14 +360,14 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "ad2dca7623f97de6394519715df34aca6b4cc9dd3928c4b5e3f300d1707adc4e",
-      "timestamp": 1792980441,
+      "sha256": "1e56c294b6d0c41b910e832eb6d0b2e8eabda3e67db1a3f7dfb7927649fdbfe0",
+      "timestamp": 1793146701,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "7e0590cccaad353abd5bf59351dacd607f5c60df6541794603a5fe0657e43932",
-      "timestamp": 1792945896,
+      "sha256": "7e356befc1089f379d565849676b117c476e61e0c24da08699dcd7c1bae2801b",
+      "timestamp": 1793048788,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
