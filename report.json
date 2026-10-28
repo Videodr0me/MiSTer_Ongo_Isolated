@@ -1,46 +1,9 @@
 {
-  "core_aliases": [
-    {
-      "destination": "_Ongo/cores/Arcade-Agress.rbf",
-      "launchers": [
-        "_Ongo/_Arcade/Agress - Missile Daisenryaku (Japan).mra"
-      ],
-      "reference": "Arcade-Agress",
-      "source": "_Arcade/cores/bazset_Agress_20261026.rbf",
-      "target_reference": "bazset_Agress"
-    },
-    {
-      "destination": "_Ongo/cores/PlumpPop_BAZSET_B01.rbf",
-      "launchers": [
-        "_Ongo/_Arcade/Plump Pop (Japan).mra"
-      ],
-      "reference": "PlumpPop_BAZSET_B01",
-      "source": "_Arcade/cores/bazset_PlumpPop_20261026.rbf",
-      "target_reference": "bazset_PlumpPop"
-    },
-    {
-      "destination": "_Ongo/cores/Tee_d_Off_bazset.rbf",
-      "launchers": [
-        "_Ongo/_Arcade/Tee'd Off (World).mra"
-      ],
-      "reference": "Tee_d_Off_bazset",
-      "source": "_Arcade/cores/bazset_TeedOff_20261025.rbf",
-      "target_reference": "bazset_TeedOff"
-    },
-    {
-      "destination": "_Ongo/cores/mastkin.rbf",
-      "launchers": [
-        "_Ongo/_Arcade/The Masters of Kin.mra"
-      ],
-      "reference": "mastkin",
-      "source": "_Arcade/cores/bazset_MastersofKin_20261025.rbf",
-      "target_reference": "bazset_MastersofKin"
-    }
-  ],
+  "core_aliases": [],
   "counts": {
-    "core_aliases": 4,
+    "core_aliases": 0,
     "dependency_cores": 18,
-    "files": 2808,
+    "files": 2804,
     "manual_core_launchers": 47,
     "mgls": 1,
     "mras": 1611,
@@ -348,8 +311,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "edd3eb8642b1fa1d6e96d1bc812d1239d8fa29bcba6433e070d1002560bbf9df",
-      "timestamp": 1793129507,
+      "sha256": "6fa070b2de64fe3497908b15db6494b48af4b2369513da5fb2267eb411114728",
+      "timestamp": 1793154289,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -360,8 +323,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "320822e3b9c92fe35dfeba83b2b642b9f890106b42a680983abdb1fbb38bc992",
-      "timestamp": 1793148373,
+      "sha256": "241e5a60548209fbbff05f7b4132ba620d7ac8f24986b9876133f1f920a23a24",
+      "timestamp": 1793157457,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
