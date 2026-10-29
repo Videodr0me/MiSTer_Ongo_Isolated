@@ -293,15 +293,7 @@
       "reference": "ikacore_CV1k"
     }
   ],
-  "shared_roms": [
-    "games/mame/arbalest.zip",
-    "games/mame/chainrec.zip",
-    "games/mame/hvysmsh.zip",
-    "games/mame/joemacr.zip",
-    "games/mame/metafox.zip",
-    "games/mame/narc.zip",
-    "games/mame/osman.zip"
-  ],
+  "shared_roms": [],
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -311,8 +303,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "01eea39d25496d50e3da40aae01371559ee1571760c5f59476c531920f3c7f46",
-      "timestamp": 1793234297,
+      "sha256": "22b1d1512f47c509d36797dfcb18425a4e97622a1a9a31b50ef872ee0be56b97",
+      "timestamp": 1793302026,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -323,8 +315,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "c8e99531cfbff654b9dac70c3a1d3bf038833b98b07d3fd88ceec06ae458f861",
-      "timestamp": 1793234436,
+      "sha256": "e59678fde4cf32d474d08962f80cee0dad855a098fe98d822b968284e74aa449",
+      "timestamp": 1793306991,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
