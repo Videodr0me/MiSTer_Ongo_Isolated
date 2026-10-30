@@ -315,8 +315,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "62b345b46eac8ced59b6bbf8d94604d7ef7d4e2ebbab1ae210ebcb87d6357a33",
-      "timestamp": 1793312663,
+      "sha256": "224cd2588404fe36e0a44d04797a881d2e6eed37b8d7317535f425a538a34bfa",
+      "timestamp": 1793337482,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
