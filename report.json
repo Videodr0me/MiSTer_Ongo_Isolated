@@ -3,10 +3,10 @@
   "counts": {
     "core_aliases": 0,
     "dependency_cores": 18,
-    "files": 2838,
+    "files": 2841,
     "manual_core_launchers": 47,
     "mgls": 1,
-    "mras": 1626,
+    "mras": 1629,
     "ongo_cores": 172,
     "rom_archives": 1016,
     "unlisted_rom_launchers": 0
@@ -141,9 +141,10 @@
         "_Ongo/_Arcade/Street Fighter Alpha - Warriors' Dreams (USA) (Restoration) [RC1].mra",
         "_Ongo/_Arcade/Street Fighter Alpha 2 (USA) (Restoration) [RC2].mra",
         "_Ongo/_Arcade/Street Fighter Alpha 3 (USA) (Restoration) [RC4].mra",
+        "_Ongo/_Arcade/Street Fighter Alpha Warriors' Dreams EX (USA) [RC2].mra",
         "_Ongo/_Arcade/Street Fighter Zero 2 Alpha (Asia) (Restoration) [RC2].mra",
-        "_Ongo/_Arcade/Super Street Fighter II EX (USA) [RC9].mra",
-        "_Ongo/_Arcade/Super Street Fighter II Turbo - Grand Master Challenge (USA) (Restoration) [RC3].mra",
+        "_Ongo/_Arcade/Super Street Fighter II EX (USA) [RC12].mra",
+        "_Ongo/_Arcade/Super Street Fighter II Turbo - Grand Master Challenge (USA) (Restoration) [RC4].mra",
         "_Ongo/_Arcade/Vampire Savior - The Lord of Vampire (USA) (Restoration) [RC2].mra",
         "_Ongo/_Arcade/Vampire Savior 2 - The Lord of Vampire (USA) [RC3].mra",
         "_Ongo/_Arcade/_alternatives/_Marvel Super Heroes Vs. Street Fighter/Marvel Super Heroes Vs. Street Fighter (Japan) (Restoration) [RC1].mra",
@@ -151,9 +152,11 @@
         "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha 2/Street Fighter Zero 2 (Asia) (Restoration) [RC2].mra",
         "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha 2/Street Fighter Zero 2 (Japan) (Restoration) [RC2].mra",
         "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha 3/Street Fighter Zero 3 (Japan) (Restoration) [RC4].mra",
+        "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha Warriors' Dreams/Street Fighter Zero EX (Asia) [RC2].mra",
+        "_Ongo/_Arcade/_alternatives/_Street Fighter Alpha Warriors' Dreams/Street Fighter Zero EX (Japan) [RC2].mra",
         "_Ongo/_Arcade/_alternatives/_Street Fighter Zero/Street Fighter Zero (Asia) (Restoration) [RC1].mra",
         "_Ongo/_Arcade/_alternatives/_Street Fighter Zero/Street Fighter Zero (Japan) (Restoration) [RC1].mra",
-        "_Ongo/_Arcade/_alternatives/_Super Street Fighter II Turbo/Super Street Fighter II EX (Japan) [RC9].mra"
+        "_Ongo/_Arcade/_alternatives/_Super Street Fighter II Turbo/Super Street Fighter II EX (Japan) [RC12].mra"
       ],
       "reference": "jtcps2",
       "source": "_Arcade/cores/jtcps2.rbf"
@@ -315,8 +318,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "d8cf9aec0fa1691a0e82648a5b1f6f098c1c9db7727e44a634376cb1e61c59be",
-      "timestamp": 1793350963,
+      "sha256": "e0b6cfcedf46150f8ec9a05554e2a9745a30a4ded1dbc421d494953aec70a87d",
+      "timestamp": 1793435369,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
