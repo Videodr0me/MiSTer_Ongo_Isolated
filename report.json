@@ -300,8 +300,8 @@
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
-      "sha256": "411f995484414b821dab9a67797be44d33134ffbe27285be75ed7658e9b271b7",
-      "timestamp": 1791336869,
+      "sha256": "44a780e010fac5f00e6af42310ec4ca18720947b72f47d751cc0840e0cb043c1",
+      "timestamp": 1793499110,
       "url": "https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip"
     },
     "distribution": {
@@ -324,8 +324,8 @@
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "7e356befc1089f379d565849676b117c476e61e0c24da08699dcd7c1bae2801b",
-      "timestamp": 1793048788,
+      "sha256": "f98727a612cf09201320f34c28ec4c463c3cf9662447a87f3ae597d56b800754",
+      "timestamp": 1793513845,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
