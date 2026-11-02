@@ -300,8 +300,8 @@
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
-      "sha256": "44a780e010fac5f00e6af42310ec4ca18720947b72f47d751cc0840e0cb043c1",
-      "timestamp": 1793499110,
+      "sha256": "500c16d337cd5d8dcf59554e5337c4697df224095f9418218a5a9796d8de79b9",
+      "timestamp": 1793646442,
       "url": "https://raw.githubusercontent.com/Coin-OpCollection/Distribution-MiSTerFPGA/db/db.json.zip"
     },
     "distribution": {
