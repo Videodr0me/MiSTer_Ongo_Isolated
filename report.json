@@ -3,12 +3,12 @@
   "counts": {
     "core_aliases": 0,
     "dependency_cores": 18,
-    "files": 2962,
+    "files": 2947,
     "manual_core_launchers": 47,
     "mgls": 1,
     "mras": 1701,
     "ongo_cores": 184,
-    "rom_archives": 1053,
+    "rom_archives": 1038,
     "unlisted_rom_launchers": 0
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
@@ -296,7 +296,23 @@
       "reference": "ikacore_CV1k"
     }
   ],
-  "shared_roms": [],
+  "shared_roms": [
+    "games/mame/alien3.zip",
+    "games/mame/arabfgt.zip",
+    "games/mame/arescue.zip",
+    "games/mame/brival.zip",
+    "games/mame/darkedge.zip",
+    "games/mame/dbzvrvs.zip",
+    "games/mame/ga2.zip",
+    "games/mame/holo.zip",
+    "games/mame/jpark.zip",
+    "games/mame/radm.zip",
+    "games/mame/radr.zip",
+    "games/mame/slipstrm.zip",
+    "games/mame/sonic.zip",
+    "games/mame/spidman.zip",
+    "games/mame/svf.zip"
+  ],
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -306,8 +322,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "3d846be07b6832a869baf8ef2255c9985fac9f7e9f77c8a04c809cd95b1f48fa",
-      "timestamp": 1793934762,
+      "sha256": "7c666e58146f1d8c87afc49efec9ec49daf7d9886f94f14dc17adb4836a73d7d",
+      "timestamp": 1793963169,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -324,8 +340,8 @@
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "f98727a612cf09201320f34c28ec4c463c3cf9662447a87f3ae597d56b800754",
-      "timestamp": 1793513845,
+      "sha256": "818ec1a60755776e1b0c5a1bbeed5e1f88f00bd131f3f7b7ed5c5a675cde0b5d",
+      "timestamp": 1793980943,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
