@@ -340,8 +340,8 @@
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "818ec1a60755776e1b0c5a1bbeed5e1f88f00bd131f3f7b7ed5c5a675cde0b5d",
-      "timestamp": 1793980943,
+      "sha256": "46cf004bb70d5f04727221548d9a40e23a84662afa029c801526c6b16338bd31",
+      "timestamp": 1794128830,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
