@@ -3,12 +3,12 @@
   "counts": {
     "core_aliases": 0,
     "dependency_cores": 18,
-    "files": 2953,
+    "files": 2954,
     "manual_core_launchers": 47,
     "mgls": 1,
     "mras": 1704,
     "ongo_cores": 184,
-    "rom_archives": 1041,
+    "rom_archives": 1042,
     "unlisted_rom_launchers": 0
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
@@ -296,23 +296,7 @@
       "reference": "ikacore_CV1k"
     }
   ],
-  "shared_roms": [
-    "games/mame/alien3.zip",
-    "games/mame/arabfgt.zip",
-    "games/mame/arescue.zip",
-    "games/mame/brival.zip",
-    "games/mame/darkedge.zip",
-    "games/mame/dbzvrvs.zip",
-    "games/mame/ga2.zip",
-    "games/mame/holo.zip",
-    "games/mame/jpark.zip",
-    "games/mame/radm.zip",
-    "games/mame/radr.zip",
-    "games/mame/slipstrm.zip",
-    "games/mame/sonic.zip",
-    "games/mame/spidman.zip",
-    "games/mame/svf.zip"
-  ],
+  "shared_roms": [],
   "sources": {
     "coinop": {
       "db_id": "Coin-OpCollection/Distribution-MiSTerFPGA",
@@ -322,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "d480ff3ca88f20e8f83df2ed21d28682ae89130384f38f1e2f3412a0c92ebd07",
-      "timestamp": 1794155595,
+      "sha256": "538307815836cf53f72e989befbabd386cf3361b2938a5b9f6333cd098a13752",
+      "timestamp": 1794170819,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -334,14 +318,14 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "f28572c989c295ae8743e97286a88aecfd9ec1065795dc365639c2912064ed64",
-      "timestamp": 1794034802,
+      "sha256": "3837d920220328ad806ae5f506769506cf3af92345c2bde1b8c71deee868454c",
+      "timestamp": 1794193403,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "46cf004bb70d5f04727221548d9a40e23a84662afa029c801526c6b16338bd31",
-      "timestamp": 1794128830,
+      "sha256": "2601ac4fa2dfe5f15d2c02720c933d48b21499d3e3bdbc41ce7e9fff84d23f16",
+      "timestamp": 1794188961,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
