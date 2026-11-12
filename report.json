@@ -306,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "31343680c2c690b12230436a8eebefa5be94b8642abdb66122fbaf2a8a015841",
-      "timestamp": 1794416279,
+      "sha256": "c9f84223e1cdcd2cd1f53e7106fa029db06441a30a45cc8ffabcebe82edec75b",
+      "timestamp": 1794439168,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -318,8 +318,8 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "bce94509704d7a392f3a799db3f910cf785bea1d1e7fc36df4c1bd61c5379c45",
-      "timestamp": 1794353154,
+      "sha256": "efacb945f1a617e4d838ba6182bd7ab78a0e95b7c4521607f977686e78f1eba3",
+      "timestamp": 1794445552,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
