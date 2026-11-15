@@ -306,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "0a5f8af43a2a9e9aeb003e2fbab1ea79a1a63f7b8d8ae3c8964513a9f2f2f59e",
-      "timestamp": 1794754787,
+      "sha256": "be05c3d61219564358068a30f30a1815218a49182427e46ffdc8434be3bef77c",
+      "timestamp": 1794773718,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
