@@ -306,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "2ee7ab738ec93e489dbd5085b612674def7baac8c92b2fa05a641c2576125f9e",
-      "timestamp": 1794902770,
+      "sha256": "55485fdb1ba9afb8b63eb66af6928449cb1decbfcda2c81e50eef08a6b62a9fd",
+      "timestamp": 1794937321,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -324,8 +324,8 @@
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "a7334b2e63052a8d3fa6fa5eb8369e7d6f6d6763628dd1b4ec5a0194981a15c7",
-      "timestamp": 1794922509,
+      "sha256": "e02dcac8c3eb897582a231246036b2cec6ec52a5e1a02aad5a46c2b947d0d51b",
+      "timestamp": 1794954661,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
