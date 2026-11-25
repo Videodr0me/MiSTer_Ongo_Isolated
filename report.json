@@ -3,12 +3,12 @@
   "counts": {
     "core_aliases": 0,
     "dependency_cores": 18,
-    "files": 2931,
+    "files": 2998,
     "manual_core_launchers": 47,
     "mgls": 1,
-    "mras": 1676,
-    "ongo_cores": 183,
-    "rom_archives": 1048,
+    "mras": 1731,
+    "ongo_cores": 184,
+    "rom_archives": 1059,
     "unlisted_rom_launchers": 0
   },
   "database_id": "Videodr0me/MiSTer_Ongo_Isolated",
@@ -306,8 +306,8 @@
     },
     "distribution": {
       "db_id": "distribution_mister",
-      "sha256": "9cd5df6d27c41c97ed826731dabb475a7cd0c5918631dc030eeaccbfd09c67d2",
-      "timestamp": 1795504078,
+      "sha256": "833e6a7b1d0286657cacddacdc8ce02c6d7ff262d494c37202977a22fbaac85f",
+      "timestamp": 1795609150,
       "url": "https://raw.githubusercontent.com/theypsilon/MultiDatabases_MiSTer/db/distribution-mister-pinned-linux/db.json.zip"
     },
     "jtcores": {
@@ -318,14 +318,14 @@
     },
     "ongo": {
       "db_id": "OngoGablogian/MiSTer_Ongo",
-      "sha256": "ac2540da2bd8b1ef9a334738308f81395c31577de74f840fb258e6f38ea20501",
-      "timestamp": 1795314781,
+      "sha256": "6423e952d3d713aeac895d1fd65fb235eab73a09eb61d875c92bfd1cb5afe160",
+      "timestamp": 1795643107,
       "url": "https://raw.githubusercontent.com/OngoGablogian/MiSTer_Ongo/db/db.json.zip"
     },
     "roms": {
       "db_id": "arcade_roms_db",
-      "sha256": "d4f5ee50d23902f9ccd247e335428ca7401f0fa790e12a76359a7462d26128e9",
-      "timestamp": 1795314057,
+      "sha256": "b4bf1c8c03c282a94f47d7dbb6bf2da747d555614ca02e2516ba1df2d796aced",
+      "timestamp": 1795567953,
       "url": "https://raw.githubusercontent.com/zakk4223/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip"
     }
   },
